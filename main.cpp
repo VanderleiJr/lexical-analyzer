@@ -1,3 +1,10 @@
+/*
+Lexical Analyzer with ANTLR4
+
+Made by Vanderlei Junior
+https://github.com/VanderleiJr
+*/
+
 #include <fstream>
 #include <iostream>
 
