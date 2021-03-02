@@ -53,7 +53,7 @@ ANTLR4
 		$ ls /usr/local/include/antlr4-runtime
 		```
 
-* Pode ser necessário a cópia de algumas bibliotecas para o seu sistema, elas estão na pasta "lexical-analyzer/libs/".
+* Pode ser necessário a cópia de algumas bibliotecas para o seu sistema, elas estão na pasta "lexical-analyzer/lib/".
 	```
 	$ cp -r <lexical-analyzer>/lib/* /usr/local/lib/
 	```
@@ -72,5 +72,5 @@ ANTLR4
 
 * Caso queira somente executar o código, bastar baixar a source compilada com todas as dependências
 	```
-	$ lexical-analyzer.out <arquivo de entrada> <arquivo de saída>
+	$ ./lexical-analyzer.out <arquivo de entrada> <arquivo de saída>
 	```
