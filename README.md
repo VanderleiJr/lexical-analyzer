@@ -1,7 +1,7 @@
 # lexical-analyzer
-Analizador Léxico feito em C++ com ANTLR4 (4.9.1) para a disciplina de Construção de Compiladores - UFSCar - ENPE 2020/2
+Analizador Léxico da linguagem LA feito em C++ com ANTLR4 (4.9.1) para a disciplina de Construção de Compiladores - UFSCar - ENPE 2020/2
 
-Lexical Analyzer made in C++ with ANTLR4 (4.9.1) for Compiler Construction subject - UFSCar - ENPE 2020/2
+Lexical LA language Analyzer made in C++ with ANTLR4 (4.9.1) for Compiler Construction subject - UFSCar - ENPE 2020/2
 
 ### Pré-requesitos
 ```
@@ -60,17 +60,24 @@ ANTLR4
 
 * Pronto, ANTLR4 instalado!
 
-### Compilando o Código
-
+### Compilando e Executando
 * Simples
 	```
 	$ cd <lexical-analyzer>
 	$ make
 	```
 
-### Executando o Código
-
 * Após compilar, basta apenas executar o comando abaixo:
 	```
 	$ ./lexical-analyzer.out <arquivo de entrada> <arquivo de saída>
+	```
+
+
+### Versão Completa
+* Uma versão com todas as bibliotecas foi compactada, afim de simplificar o processo de quem apenas quer testar o programa, assim, após baixar o [lexical-analyzer](https://github.com/VanderleiJr/lexical-analyzer/releases/tag/v0.1-alpha), executar os comandos abaixo:
+	```
+	$ unzip lexical-analyzer.zip
+	$ cd lexical-analyzer/
+	$ make
+	$ ./run.sh <arquivo de entrada> <arquivo de saída>
 	```
