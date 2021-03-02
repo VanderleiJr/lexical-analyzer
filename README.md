@@ -22,7 +22,7 @@ ANTLR4
 	$ alias grun='java org.antlr.v4.gui.TestRig'
 	```
 
-* Adicionando o alias no seu ~/.bashrc (ou ~/.bash_profile) e logo depois:
+* Adicione o alias no seu ~/.bashrc (ou ~/.bash_profile) e logo depois:
 	```
 	$ source ~/.bashrc (ou ~/.bash_profile)
 	```
@@ -30,14 +30,14 @@ ANTLR4
 * Após, baixe o [ANTLR4 C++ Target](https://www.antlr.org/download/antlr4-cpp-runtime-4.9.1-source.zip), então, crie e extraia na pasta "antlr4-dir".
 	```
 	$ mkdir antlr4-dir
-	$ unzip antlr4-cpp-runtime-4.9.1-source.zip antlr4-dir
+	$ unzip <pasta de download>/antlr4-cpp-runtime-4.9.1-source.zip antlr4-dir
 	```
 
 * Compile a biblioteca do ANTLR4
 	```
 	$ cd antlr4-dir
 	$ mkdir build && mkdir run && cd build
-	$ cmake .. -DANTLR_JAR_LOCATION=f/usr/local/lib/antlr-4.9.1-complete.jar
+	$ cmake ../
 	$ make
 	$ DESTDIR=../run make install
 	```
@@ -53,9 +53,9 @@ ANTLR4
 		$ ls /usr/local/include/antlr4-runtime
 		```
 
-* Pode ser necessário a cópia de algumas bibliotecas para o seu sistema, elas estão na pasta "lexical-analyzer/lib/".
+* Pode ser necessário a cópia de algumas bibliotecas para o seu sistema, elas estão na pasta "lexical-analyzer/lib/" (usuários Arch, podem utilizar ```pacman -S antlr4-runtime```).
 	```
-	$ cp -r <lexical-analyzer>/lib/* /usr/local/lib/
+	$ cp -r <lexical-analyzer>/lib /usr/local/lib/
 	```
 
 * Pronto, ANTLR4 instalado!
@@ -70,7 +70,7 @@ ANTLR4
 
 ### Executando o Código
 
-* Caso queira somente executar o código, bastar baixar a source compilada com todas as dependências
+* Após compilar, basta apenas executar o comando abaixo:
 	```
 	$ ./lexical-analyzer.out <arquivo de entrada> <arquivo de saída>
 	```
