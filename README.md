@@ -3,6 +3,8 @@ Analizador Léxico da linguagem LA feito em C++ com ANTLR4 (4.9.1) para a discip
 
 Lexical LA language Analyzer made in C++ with ANTLR4 (4.9.1) for Compiler Construction subject - UFSCar - ENPE 2020/2
 
+## Grupo composto por Vanderlei de Brito Junior, 636932
+
 ### Pré-requesitos
 ```
 Java
